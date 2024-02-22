@@ -77,6 +77,26 @@ body {}
 	line-height: 1;
 }
 
+.nav1 a:hover {
+	color: #fff;
+}
+
+#xhx .d1:before {
+	content: '';
+	position: absolute;
+	width: 0;
+	left: 50%;
+	bottom: 0;
+	height: 4px;
+	background-color: #f8f9fa;
+}
+
+#xhx .d1:hover:before {
+	width: 80%;
+	left: 10%;
+	transition: all 0.6s;
+}
+
 .toggle {
 	display: none;
 	height: 100%;
@@ -162,24 +182,6 @@ body {}
 .i-side-nav.open {
 	right: 0;
 }
-
-
-#xhx .d1:before {
-	content: '';
-	position: absolute;
-	width: 0;
-	left: 50%;
-	bottom: 0;
-	height: 4px;
-	background-color: #f8f9fa;
-}
-
-#xhx .d1:hover:before {
-	width: 80%;
-	left: 10%;
-	transition: all 0.6s;
-}
-
 
 .lunbotu a {
 	list-style: none;
