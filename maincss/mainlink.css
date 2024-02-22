@@ -1,0 +1,463 @@
+font-face {
+	font-family: Potra;
+	src: url(./fonts/Potra.otf);
+}
+
+@font-face {
+	font-family: Legend;
+	src: url(./fonts/Legend.otf);
+}
+
+@font-face {
+	font-family: Sounso-Quality;
+	src: url(./fonts/Sounso-Quality.ttf);
+}
+
+@font-face {
+	font-family: Sounso-Undividedad;
+	src: url(./fonts/Sounso-Undividedad.ttf);
+}
+
+body {}
+
+* {
+	margin: ;
+}
+
+#container {}
+
+#header {
+	text-shadow: 0 0.2rem 0.3rem #00000080;
+	padding: 0;
+}
+
+.nav1 {
+	display: flex;
+	justify-content: center;
+	background-color: rgba(225, 225, 228, 0.4);
+	backdrop-filter: blur(10px);
+	list-style-type: none;
+	top: 0;
+	width: 100%;
+	z-index: 9999999;
+	position: fixed;
+}
+
+.logo {
+	font-family: Sounso-Quality;
+	white-space: nowrap;
+}
+
+.nav1 ul {
+	margin: auto;
+	list-style-type: none;
+	overflow: hidden;
+
+}
+
+.liks li {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.nav1 li {
+	float: left;
+	width: 100px;
+	padding: 10px;
+}
+
+.nav1 a {
+	display: table;
+	color: white;
+	text-align: center;
+	padding: 7px 20px;
+	text-decoration: none;
+	font-weight: bolder;
+	line-height: 1;
+}
+
+.toggle {
+	display: none;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+}
+
+.ham {
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+	transition: transform 400ms;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.hamRotate.active {
+	transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+	transform: rotate(180deg);
+}
+
+.line {
+	fill: none;
+	transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+	stroke: #fff;
+	stroke-width: 5.5;
+	stroke-linecap: round;
+}
+
+.ham4 .top {
+	stroke-dasharray: 40 121;
+}
+
+.ham4 .bottom {
+	stroke-dasharray: 40 121;
+}
+
+.ham4.active .top {
+	stroke-dashoffset: -68px;
+}
+
+.ham4.active .bottom {
+	stroke-dashoffset: -68px;
+}
+
+.i-nav-toggle.open i {
+	height: 0;
+	transition: 0.01s;
+}
+
+.i-shade {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: #000000;
+	-moz-opacity: 0.3;
+	-khtml-opacity: 0.3;
+	opacity: 0.2;
+	display: none;
+	z-index: 999;
+}
+
+.i-side-nav {
+	position: fixed;
+	top: 0px;
+	right: -274px;
+	height: 100%;
+	width: 274px;
+	z-index: 999999999999999;
+	background-color: #fdfdfd;
+	transition: 0.3s;
+	justify-content: center;
+}
+
+.i-side-nav.open {
+	right: 0;
+}
+
+
+#xhx .d1:before {
+	content: '';
+	position: absolute;
+	width: 0;
+	left: 50%;
+	bottom: 0;
+	height: 4px;
+	background-color: #f8f9fa;
+}
+
+#xhx .d1:hover:before {
+	width: 80%;
+	left: 10%;
+	transition: all 0.6s;
+}
+
+
+.lunbotu a {
+	list-style: none;
+}
+
+.lunbotu li {
+	list-style: none;
+}
+
+.lunbotu {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -99;
+	top: -10px;
+	bottom: 0;
+}
+
+.content {
+	width: 100%;
+	height: 100%;
+	margin: 0px auto;
+	position: relative;
+}
+
+.item {
+	opacity: 0;
+	transition: all 1s;
+}
+
+.item.active {
+	opacity: 1;
+}
+
+#item {
+	z-index: -9;
+	content-visibility: auto;
+	contain-intrinsic-size: 100vw 70vh;
+	background-color: #363636;
+	width: 100%;
+	height: 70vh;
+	position: fixed;
+
+}
+
+#item img {
+	-o-object-fit: cover;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0
+}
+
+.waves {
+	position: relative;
+	width: 100%;
+	height: 250px;
+	min-height: 3.125rem;
+	max-height: 9.375rem;
+	margin-bottom: -.6875rem;
+	top: 250px;
+	bottom: 0;
+}
+
+.parallax>use {
+	animation: 25s cubic-bezier(.55, .5, .45, .5) infinite wave;
+}
+
+.parallax>use:first-child(1) {
+	animation-duration: 7s;
+	animation-delay: -2s
+}
+
+.parallax>use:nth-child(2) {
+	animation-duration: 10s;
+	animation-delay: -3s
+}
+
+.parallax>use:nth-child(3) {
+
+	animation-duration: 13s;
+	animation-delay: -4s
+}
+
+.parallax>use:nth-child(4) {
+	animation-duration: 20s;
+	animation-delay: -5s
+}
+
+@keyframes wave {
+	0% {
+		transform: translate(-90px)
+	}
+
+	to {
+		transform: translate(85px)
+	}
+}
+
+.lbtwave {
+	min-height: 100vh;
+	position: relative;
+}
+
+/*********************加载动画***********************/
+#loading {
+	position: absolute;
+	background-color: #1d1e22;
+	top: px;
+	left: px;
+	width: 100%;
+	height: 100%;
+	z-index: 999999999;
+}
+
+
+.loading-main {
+	background-color: #000;
+	box-sizing: content-box;
+	position: relative;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
+}
+
+.loading-main div {
+	position: absolute;
+}
+
+.loading-name {
+	width: 170px;
+	height: 44px;
+	top: 26px;
+	left: -39px;
+	border: 2px solid #FFF;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.loading-name .lo-box {
+	width: 166px;
+	height: 42px;
+	top: 0px;
+	left: -170px;
+	background-color: #FFF;
+	z-index: 1;
+	margin-right: 2px;
+	animation: loader 2s infinite;
+	animation-timing-function: linear;
+}
+
+.loading-name .lo-d {
+	position: absolute;
+	top: -4px;
+	left: 23px;
+	color: #000;
+	-webkit-text-stroke: 0.5px #FFF;
+	z-index: 8;
+
+}
+
+.loading-dz {
+	width: 100px;
+	height: 100px;
+	border: 1px solid;
+	border-color: #FFF;
+	z-index: 10;
+	animation-name: lo-xz;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	-webkit-animation-name: lo-xz;
+	-webkit-animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+.loading-xz {
+	width: 92px;
+	height: 92px;
+	margin: 4px;
+	border: 1px solid;
+	border-color: #fff;
+	opacity: 0.5;
+	z-index: 10;
+	animation-name: lo-xz;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-direction: reverse;
+	-webkit-animation-name: lo-xz;
+	-webkit-animation-duration: 4s;
+	-webkit-background-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-direction: reverse;
+}
+
+.loading-yuan {
+	width: 82px;
+	height: 82px;
+	margin: 9px;
+	border: 4px solid #fff;
+	border-top-color: #FFF;
+	border-right-color: transparent;
+	border-bottom-color: #FFF;
+	border-left-color: transparent;
+	border-radius: 90px;
+	z-index: 10;
+	animation-name: lo-xz;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-direction: reverse;
+	-webkit-animation-name: lo-xz;
+	-webkit-animation-duration: 2.5s;
+	-webkit-background-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-direction: reverse;
+}
+
+
+
+
+@keyframes lo-xz {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes lo-xz {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes loader {
+	0% {
+		transform: translate(-170px);
+	}
+
+	100% {
+		transform: translate(350px);
+	}
+}
+
+/*********************加载动画***********************/
+
+/* 小屏幕手机端 */
+@media (min-width: 0px) and (max-width:768px) {
+	.toggle {
+		display: flex;
+	}
+
+	#xhx .s {
+		display: none;
+	}
+
+	.nav1 ul {
+		overflow: visible;
+		padding: 0;
+	}
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 768px) and (max-width:992px) {}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 992px) {}
