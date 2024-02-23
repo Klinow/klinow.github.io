@@ -18,14 +18,6 @@ font-face {
 	src: url(./fonts/Sounso-Undividedad.ttf);
 }
 
-body {}
-
-* {
-	margin: ;
-}
-
-#container {}
-
 #header {
 	text-shadow: 0 0.2rem 0.3rem #00000080;
 	padding: 0;
@@ -69,7 +61,7 @@ body {}
 
 .nav1 a {
 	display: table;
-	color: white;
+	color: #fff;
 	text-align: center;
 	padding: 7px 20px;
 	text-decoration: none;
@@ -97,92 +89,6 @@ body {}
 	transition: all 0.6s;
 }
 
-.toggle {
-	display: none;
-	height: 100%;
-	margin: 0;
-	overflow: hidden;
-	position: absolute;
-	width: 100%;
-}
-
-.ham {
-	cursor: pointer;
-	-webkit-tap-highlight-color: transparent;
-	transition: transform 400ms;
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-
-.hamRotate.active {
-	transform: rotate(45deg);
-}
-
-.hamRotate180.active {
-	transform: rotate(180deg);
-}
-
-.line {
-	fill: none;
-	transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
-	stroke: #fff;
-	stroke-width: 5.5;
-	stroke-linecap: round;
-}
-
-.ham4 .top {
-	stroke-dasharray: 40 121;
-}
-
-.ham4 .bottom {
-	stroke-dasharray: 40 121;
-}
-
-.ham4.active .top {
-	stroke-dashoffset: -68px;
-}
-
-.ham4.active .bottom {
-	stroke-dashoffset: -68px;
-}
-
-.i-nav-toggle.open i {
-	height: 0;
-	transition: 0.01s;
-}
-
-.i-shade {
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	background: #000000;
-	-moz-opacity: 0.3;
-	-khtml-opacity: 0.3;
-	opacity: 0.2;
-	display: none;
-	z-index: 999;
-}
-
-.i-side-nav {
-	position: fixed;
-	top: 0px;
-	right: -274px;
-	height: 100%;
-	width: 274px;
-	z-index: 999999999999999;
-	background-color: #fdfdfd;
-	transition: 0.3s;
-	justify-content: center;
-}
-
-.i-side-nav.open {
-	right: 0;
-}
-
 .lunbotu a {
 	list-style: none;
 }
@@ -201,19 +107,19 @@ body {}
 	bottom: 0;
 }
 
-.content {
+.lunbotu .content {
 	width: 100%;
 	height: 100%;
 	margin: 0px auto;
 	position: relative;
 }
 
-.item {
+.lunbotu .item {
 	opacity: 0;
 	transition: all 1s;
 }
 
-.item.active {
+.lunbotu .item.active {
 	opacity: 1;
 }
 
@@ -288,6 +194,140 @@ body {}
 	min-height: 100vh;
 	position: relative;
 }
+
+main {
+	background: linear-gradient(to top, var(--bs-white)0, var(--bs-gray-100)20%)no-repeat bottom;
+}
+
+.toggle {
+	display: none;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+}
+
+.ham {
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+	transition: transform 400ms;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.hamRotate.active {
+	transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+	transform: rotate(180deg);
+}
+
+.line {
+	fill: none;
+	transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+	stroke: #fff;
+	stroke-width: 5.5;
+	stroke-linecap: round;
+}
+
+.ham4 .top {
+	stroke-dasharray: 40 121;
+}
+
+.ham4 .bottom {
+	stroke-dasharray: 40 121;
+}
+
+.ham4.active .top {
+	stroke-dashoffset: -68px;
+}
+
+.ham4.active .bottom {
+	stroke-dashoffset: -68px;
+}
+
+.i-nav-toggle.open i {
+	height: 0;
+	transition: 0.01s;
+}
+
+.i-shade {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	background: #000000;
+	-moz-opacity: 0.3;
+	-khtml-opacity: 0.3;
+	opacity: 0.2;
+	display: none;
+	z-index: 999;
+}
+
+.i-side-nav {
+	position: absolute;
+	top: 500px;
+	height: 100%;
+	width: 274px;
+	z-index: 1;
+	background-color: #fdfdfd;
+	justify-content: center;
+}
+
+.inners .open {
+	right: 0;
+}
+
+.inners {
+	justify-content: space-between;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+}
+
+
+.i-side-nav .inner {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.about .touxiang {
+	width: 150px;
+	border-radius: 50%;
+}
+
+.about .name {
+	margin: .4515rem 0 0;
+}
+
+.about .liuyan {
+	color: #999;
+	margin: .7231rem;
+}
+
+.state {
+	text-align: center;
+	white-space: nowrap;
+	justify-content: center;
+	margin-top: .625rem;
+	line-height: 1.4;
+	display: flex;
+	overflow: hidden;
+}
+.state .item-s {
+	padding: 0.93756rem;
+}
+.state .item-s a{
+	text-decoration: none;
+}
+
 
 /*********************加载动画***********************/
 #loading {
@@ -456,10 +496,38 @@ body {}
 		overflow: visible;
 		padding: 0;
 	}
+
+	.i-side-nav {
+		position: fixed;
+		top: 0px;
+		right: -274px;
+		height: 100%;
+		width: 274px;
+		z-index: 999999999999999;
+		background-color: #fdfdfd;
+		transition: 0.3s;
+		justify-content: center;
+	}
 }
 
 /* 中等屏幕（桌面显示器，大于等于 992px） */
-@media (min-width: 768px) and (max-width:992px) {}
+@media (min-width: 768px) and (max-width:992px) {
+	.toggle {
+		display: flex;
+	}
+
+	.i-side-nav {
+		position: fixed;
+		top: 0px;
+		right: -274px;
+		height: 100%;
+		width: 274px;
+		z-index: 999999999999999;
+		background-color: #fdfdfd;
+		transition: 0.3s;
+		justify-content: center;
+	}
+}
 
 /* 大屏幕（大桌面显示器，大于等于 1200px） */
 @media (min-width: 992px) {}
