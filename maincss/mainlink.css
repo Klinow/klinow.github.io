@@ -31,6 +31,9 @@
 	height: 50vh;
 	min-height: 10rem;
 	padding: 3rem 5rem 0;
+	
+}
+.brand .twz {
 	position: fixed;
 }
 
@@ -58,6 +61,7 @@
 }
 
 .twz h1 {
+	color: #fff;
 	letter-spacing: .125rem;
 	font-size: 2.5em;
 }
@@ -66,12 +70,9 @@
 	margin: .625rem 0;
 }
 
-.brand .twz-m p {
+.brand p {
 	font-size: 50px;
 	display: flex;
-}
-
-.brand p {
 	color: #fff;
 	margin: 0;
 }
