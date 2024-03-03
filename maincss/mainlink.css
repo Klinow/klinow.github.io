@@ -1,5 +1,3 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-
 @font-face {
 	font-family: Potra;
 	src: url(./fonts/Potra.otf);
@@ -25,6 +23,14 @@
 	padding: 0;
 }
 
+#containers {
+	flex-direction: column;
+	min-width: 100%;
+	min-height: 100%;
+	display: flex;
+	position: relative;
+}
+
 .brand {
 	text-align: center;
 	width: 100%;
@@ -35,7 +41,6 @@
 
 .twz {
 	position: fixed;
-	z-index: 9998;
 }
 
 .brand,
@@ -80,11 +85,6 @@
 
 #topnav {
 	transition: top 0.3s ease-in-out;
-}
-
-main {
-	padding-top: 60px;
-	margin-top: 60px;
 }
 
 .nav1 {
@@ -215,8 +215,9 @@ main {
 	min-height: 3.125rem;
 	max-height: 9.375rem;
 	margin-bottom: -.6875rem;
-	top: 250px;
+	top: -.3447rem;
 	bottom: 0;
+	z-index: 9999;
 }
 
 .parallax>use {
@@ -255,14 +256,16 @@ main {
 }
 
 .lbtwave {
-	min-height: 100vh;
 	position: relative;
 }
 
 main {
-	background: linear-gradient(to top, var(--bs-white)0, var(--bs-gray-100)20%)no-repeat bottom;
+	background: linear-gradient(to top, var(--bs-white)0, var(--bs-white)20%)no-repeat bottom;
 	position: relative;
-	z-index: 9999;
+}
+
+main>.inners {
+	width: 72.5rem;
 }
 
 .toggle {
@@ -332,12 +335,11 @@ main {
 	-khtml-opacity: 0.3;
 	opacity: 0.2;
 	display: none;
-	z-index: 999;
+	z-index: 99999;
 }
 
 .i-side-nav {
 	right: 0;
-	t1op: 500px;
 	height: 100%;
 	width: 274px;
 	z-index: 1;
@@ -359,7 +361,6 @@ main {
 	align-items: center;
 	margin: 0;
 	position: relative;
-	z-index: 9999;
 }
 
 main>.inners {
@@ -681,7 +682,10 @@ main>.inners {
 		z-index: 999999999999999;
 		background-color: #fdfdfd;
 		transition: 0.3s;
-		justify-content: center;
+	}
+
+	.neirong {
+		width: 100%;
 	}
 }
 
@@ -693,14 +697,15 @@ main>.inners {
 
 	.i-side-nav {
 		position: fixed;
-		top: 0px;
 		right: -274px;
 		height: 100%;
 		width: 274px;
 		z-index: 999999999999999;
-		background-color: #fdfdfd;
 		transition: 0.3s;
-		justify-content: center;
+	}
+
+	.neirong {
+		width: 100%;
 	}
 }
 
