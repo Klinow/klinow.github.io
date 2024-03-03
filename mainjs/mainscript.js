@@ -18,6 +18,9 @@ window.addEventListener('focus', function() {
 
 
 
+
+
+
 $(function() {
 	// 给 '汉堡菜单' 添加单击事件
 	$(".ham").click(function(e) {
@@ -59,6 +62,8 @@ $(function() {
 
 
 
+
+
 function clearClasses() {
 	items.forEach(item => item.classList.remove("active"));
 }
@@ -85,4 +90,22 @@ container.addEventListener("mouseover", () => {
 container.addEventListener("mouseleave", () => {
 	clearInterval(timer);
 	timer = setInterval(rightBtnClick, 3000);
+});
+
+
+  
+
+
+
+
+var elementToCheck = document.getElementById('main-a');
+
+window.addEventListener('scroll', function() {
+	var elementTop = elementToCheck.getBoundingClientRect().top;
+	var topNav = document.getElementById('topnav');
+	if (elementTop >= 0) {
+		topNav.style.top = '0';
+	} else {
+		topNav.style.top = '-60px';
+	}
 });

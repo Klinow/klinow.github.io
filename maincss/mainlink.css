@@ -32,8 +32,10 @@
 	min-height: 10rem;
 	padding: 3rem 5rem 0;
 }
+
 .twz {
 	position: fixed;
+	z-index: 9998;
 }
 
 .brand,
@@ -74,6 +76,15 @@
 	display: flex;
 	color: #fff;
 	margin: 0;
+}
+
+#topnav {
+	transition: top 0.3s ease-in-out;
+}
+
+main {
+	padding-top: 60px;
+	margin-top: 60px;
 }
 
 .nav1 {
@@ -250,6 +261,8 @@
 
 main {
 	background: linear-gradient(to top, var(--bs-white)0, var(--bs-gray-100)20%)no-repeat bottom;
+	position: relative;
+	z-index: 9999;
 }
 
 .toggle {
@@ -323,13 +336,16 @@ main {
 }
 
 .i-side-nav {
-	position: absolute;
-	top: 500px;
+	right: 0;
+	t1op: 500px;
 	height: 100%;
 	width: 274px;
 	z-index: 1;
 	background-color: #fdfdfd;
 	justify-content: center;
+	position: sticky;
+	top: 0;
+	position: -webkit-sticky;
 }
 
 .inners .open {
@@ -342,8 +358,16 @@ main {
 	justify-content: center;
 	align-items: center;
 	margin: 0;
+	position: relative;
+	z-index: 9999;
 }
 
+main>.inners {
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: calc(100% - .625rem);
+}
 
 .i-side-nav .inner {
 	text-align: center;
@@ -447,6 +471,38 @@ main {
 	background-color: #e9ecef;
 }
 
+
+
+.neirong {
+	background: linear-gradient(to top, var(--bs-white)0, var(--bs-gray-100)20%)no-repeat top;
+	box-shadow: 0 1.25rem 1rem .3125rem var(--bs-gray-100);
+	width: calc(100% - 15.75rem);
+	min-height: 37.5rem;
+}
+
+#main .wrap {
+	padding: 1.25rem;
+	position: relative;
+}
+
+#main .wrap:first-child {
+	margin-bottom: 1.25rem;
+}
+
+.neirong .zdwz {
+	text-transform: uppercase;
+	letter-spacing: .05rem;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	color: var(--bs-gray-300);
+	white-space: nowrap;
+	text-align: center;
+	height: auto;
+	margin: 1rem 0;
+	font-weight: 700;
+	line-height: 1;
+}
 
 /*********************加载动画***********************/
 #loading {
