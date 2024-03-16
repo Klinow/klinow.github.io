@@ -178,27 +178,29 @@ $(document).ready(function() {
 
 
 function updateBeijingDateTime() {
-    // 获取当前时间的 Date 对象
-    var now = new Date();
+	// 获取当前时间的 Date 对象
+	var now = new Date();
 
-    // 设置时区为东八区（北京时间）
-    now.toLocaleString('en-US', { timeZone: 'Asia/Shanghai' });
+	// 设置时区为东八区（北京时间）
+	now.toLocaleString('en-US', {
+		timeZone: 'Asia/Shanghai'
+	});
 
-    // 格式化日期
-    var year = now.getFullYear();
-    var month = (now.getMonth() + 1 < 10) ? "0" + (now.getMonth() + 1) : now.getMonth() + 1;
-    var day = (now.getDate() < 10) ? "0" + now.getDate() : now.getDate();
+	// 格式化日期
+	var year = now.getFullYear();
+	var month = (now.getMonth() + 1 < 10) ? "0" + (now.getMonth() + 1) : now.getMonth() + 1;
+	var day = (now.getDate() < 10) ? "0" + now.getDate() : now.getDate();
 
-    // 格式化时间
-    var hours = (now.getHours() < 10) ? "0" + now.getHours() : now.getHours();
-    var minutes = (now.getMinutes() < 10) ? "0" + now.getMinutes() : now.getMinutes();
-    var seconds = (now.getSeconds() < 10) ? "0" + now.getSeconds() : now.getSeconds();
+	// 格式化时间
+	var hours = (now.getHours() < 10) ? "0" + now.getHours() : now.getHours();
+	var minutes = (now.getMinutes() < 10) ? "0" + now.getMinutes() : now.getMinutes();
+	var seconds = (now.getSeconds() < 10) ? "0" + now.getSeconds() : now.getSeconds();
 
-    // 构建日期时间字符串
-    var dateTimeString = year + "-" + month + "-" + day + " " + hours + ":" + minutes + ":" + seconds;
+	// 构建日期时间字符串
+	var dateTimeString = year + "-" + month + "-" + day + " " + hours + ":" + minutes + ":" + seconds;
 
-    // 将日期时间显示在页面上
-    document.getElementById("beijing-date-time").innerHTML = dateTimeString;
+	// 将日期时间显示在页面上
+	document.getElementById("beijing-date-time").innerHTML = dateTimeString;
 }
 
 // 每秒更新一次日期时间
@@ -206,3 +208,8 @@ setInterval(updateBeijingDateTime, 1000);
 
 // 页面加载时立即更新日期时间
 updateBeijingDateTime();
+
+
+
+
+
