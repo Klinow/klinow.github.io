@@ -437,6 +437,7 @@ main {
 
 .i-side-nav {
 	right: 0;
+	background-color: #fff;
 	height: 100%;
 	width: 274px;
 	z-index: 1;
