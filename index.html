@@ -30,11 +30,11 @@
 				<header id="header">
 					<div class="brand">
 						<div class="twz">
-							<a href="#">
+							<a href="#" class="You">
 								<p>Klinow's blog</p>
 								<h1>首页</h1>
 							</a>
-							<p>11111</p>
+							<p id="beijing-date-time" class="Ali"></p>
 						</div>
 
 						<div class="nav1" id="topnav">
@@ -81,8 +81,7 @@
 					<div class="search-ma">
 						<input class="search-se" type="text" id="searchInput" oninput="search()">
 					</div>
-					<div class="search-ba">
-						<p style="margin-left: -580px;margin-top: 20px;">搜索结果</p>
+					<div class="search-ba Ali">
 						<ul id="results"></ul>
 					</div>
 				</div>
@@ -108,12 +107,42 @@
 						<div class="nemain wrap">
 							<h2 class="zdwz">置顶文章</h2>
 							<div class="segments">
-								<article class="zdwz-item show">
+								<article class="zdwz-item show 正">
+									<div class="cover ">
+										<a href=""><img src="./mainimg/1.jpg" alt="" /></a>
+									</div>
+									<div class="info">
+										<div class="meta"><time>2024-3-10</time></div>
+										<h3><a href="">公告</a></h3>
+									</div>
+								</article>
+							</div>
+							<h2 class="zdwz">精选文章</h2>
+							<div class="segments">
+								<article class="zdwz-item show 正1">
 									<div class="cover">
 										<a href=""><img src="./mainimg/1.jpg" alt="" /></a>
 									</div>
 									<div class="info">
-										<div class="meta"><span title="创建时间：2022-05-14 08:35:17" class=item></span></div>
+										<div class="meta"><time>2024-3-10</time></div>
+										<h3><a href="">公告</a></h3>
+									</div>
+								</article>
+								<article class="zdwz-item show 反">
+									<div class="cover ">
+										<a href=""><img src="./mainimg/1.jpg" alt="" /></a>
+									</div>
+									<div class="info">
+										<div class="meta"><time>2024-3-10</time></div>
+										<h3><a href="">公告</a></h3>
+									</div>
+								</article>
+								<article class="zdwz-item show 正1">
+									<div class="cover">
+										<a href=""><img src="./mainimg/1.jpg" alt="" /></a>
+									</div>
+									<div class="info">
+										<div class="meta"><time>2024-3-10</time></div>
 										<h3><a href="">公告</a></h3>
 									</div>
 								</article>
@@ -124,8 +153,8 @@
 						<div class="inner">
 							<div class="about">
 								<img class="touxiang" src="./mainimg/touxiang.png" />
-								<h3 class="name">Klinow</h3>
-								<div class="liuyan">嘿[[}}</div>
+								<h3 class="name Soun">Klinow</h3>
+								<div class="liuyan You">嘿[[}}</div>
 							</div>
 							<nav class="state">
 								<div class="item-s"><a href="#"><span class="count">39</span><span
@@ -141,8 +170,8 @@
 								<a href=""><i class="bi bi-envelope"></i></a>
 							</div>
 							<div class="menu">
-								<li class=""><a href="">首页</a></li>
-								<li class=""><a href="">资源</a></li>
+								<li class=""><a href="./index.html">首页</a></li>
+								<li class=""><a href="./resource/resource.html">资源</a></li>
 								<li class=""><a href="">关于</a></li>
 								<li class=""><a href="">文章</a></li>
 								<li class=""><a href="">友链</a></li>
@@ -156,5 +185,6 @@
 		</div>
 		</div>
 		<script src="./mainjs/mainscript.js"></script>
+		<script src="https://cdn.bootcdn.net/ajax/libs/marked/9.0.0/marked.min.js"></script>
 	</body>
 </html>

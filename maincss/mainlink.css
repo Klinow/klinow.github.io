@@ -1,11 +1,6 @@
 @font-face {
-	font-family: Potra;
-	src: url(./fonts/Potra.otf);
-}
-
-@font-face {
-	font-family: Legend;
-	src: url(./fonts/Legend.otf);
+	font-family: Alimama;
+	src: url(./fonts/AlimamaFangYuanTiVF-Thin-2.ttf);
 }
 
 @font-face {
@@ -14,12 +9,26 @@
 }
 
 @font-face {
-	font-family: Sounso-Undividedad;
-	src: url(./fonts/Sounso-Undividedad.ttf);
+	font-family: YouShe;
+	src: url(./fonts/YouSheYuFeiTeJianKangTi-2.ttf);
 }
+
+.You {
+	font-family: YouShe;
+}
+
+.Ali {
+	font-family: Alimama;
+}
+
+.Soun {
+	font-family: Sounso-Quality;
+}
+
 body a {
 	text-decoration: none;
 }
+
 #header {
 	text-shadow: 0 0.2rem 0.3rem #00000080;
 	padding: 0;
@@ -79,7 +88,7 @@ body a {
 }
 
 .brand p {
-	font-size: 50px;
+	font-size: 20px;
 	display: flex;
 	color: #fff;
 	margin: 0;
@@ -110,13 +119,16 @@ body a {
 	margin: auto;
 	list-style-type: none;
 	overflow: hidden;
-
 }
 
 .liks li {
 	display: flex;
 	justify-content: center;
 	position: relative;
+}
+
+.liks .s {
+	font-family: Alimama;
 }
 
 .tubiaos {
@@ -153,11 +165,10 @@ body a {
 
 .search-c .search-ba {
 	background-color: rgba(255, 255, 255, 0.7);
-	box-shadow: 2px 2px 9px #000000;
+	box-shadow: 2px 2px 9px #999;
 	text-shadow: none;
 	border-radius: 0;
 	width: 43.75rem;
-	height: calc(100% - 6.25rem);
 	margin: 0 auto;
 }
 
@@ -234,6 +245,7 @@ body a {
 	bottom: 0;
 	height: 4px;
 	background-color: #f8f9fa;
+	border-radius: 30px;
 }
 
 #xhx .d1:hover:before {
@@ -303,8 +315,8 @@ body a {
 	height: 250px;
 	min-height: 3.125rem;
 	max-height: 9.375rem;
-	margin-bottom: -.6875rem;
-	top: -.3447rem;
+	margin-bottom: -.626rem;
+	top: -.3291rem;
 	bottom: 0;
 	z-index: 9999;
 }
@@ -351,10 +363,6 @@ body a {
 main {
 	background: linear-gradient(to top, var(--bs-white)0, var(--bs-white)20%)no-repeat bottom;
 	position: relative;
-}
-
-main>.inners {
-	width: 72.5rem;
 }
 
 .toggle {
@@ -432,7 +440,6 @@ main>.inners {
 	height: 100%;
 	width: 274px;
 	z-index: 1;
-	background-color: #fdfdfd;
 	justify-content: center;
 	position: sticky;
 	top: 0;
@@ -456,7 +463,8 @@ main>.inners {
 	flex-direction: row-reverse;
 	justify-content: space-between;
 	align-items: flex-start;
-	width: calc(100% - .625rem);
+	width: calc(100% - 20rem);
+	margin: 0 auto;
 }
 
 .i-side-nav .inner {
@@ -487,6 +495,7 @@ main>.inners {
 	line-height: 1.4;
 	display: flex;
 	overflow: hidden;
+	font-family: Alimama;
 }
 
 .state .item-s {
@@ -541,6 +550,7 @@ main>.inners {
 	background-color: #0000;
 	margin: 0;
 	padding: 1.25rem;
+	
 }
 
 .inner .menu li {
@@ -548,6 +558,7 @@ main>.inners {
 	margin-bottom: .625rem;
 	transition: all .2s ease-in-out;
 	display: block;
+	font-family: Alimama;
 }
 
 .inner .menu li a {
@@ -567,7 +578,8 @@ main>.inners {
 	background: linear-gradient(to top, var(--bs-white)0, var(--bs-gray-100)20%)no-repeat top;
 	box-shadow: 0 1.25rem 1rem .3125rem var(--bs-gray-100);
 	width: calc(100% - 15.75rem);
-	min-height: 37.5rem;
+	min-width: 600px;
+	min-height: 50rem;
 }
 
 #main .wrap {
@@ -599,6 +611,46 @@ main>.inners {
 	justify-content: center;
 	align-items: center;
 	display: flex;
+	font-family: YouShe;
+}
+
+.segments .反 {
+	flex-direction: row-reverse;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.segments .反 .cover {
+	clip-path: polygon(4% 0, 100% 0%, 100% 100%, 13% 100%);
+	border-radius: 0 .625rem .625rem 0;
+	margin-right: 0;
+}
+
+.segments .反 .info .meta {
+	justify-content: flex-start;
+	margin-left: 20px;
+}
+
+.segments .反 .info h3 {
+	margin-left: 20px;
+}
+
+.segments .正 .cover {
+	clip-path: polygon(0 0, 92% 0%, 100% 100%, 0% 100%);
+	border-radius: .625rem 0 0 .625rem;
+}
+
+.segments .正1 .cover {
+	clip-path: polygon(0 0, 92% 0%, 100% 100%, 0% 100%);
+	border-radius: .625rem 0 0 .625rem;
+}
+
+.segments .正1 .info .meta {
+	margin-right: 200px;
+}
+
+.segments .zdwz-item:hover {
+	box-shadow: 0px 0px 5px #999;
 }
 
 .segments .zdwz-item {
@@ -608,34 +660,58 @@ main>.inners {
 	min-width: calc(100% - 2rem);
 	transition: all .2s ease-in-out;
 	display: flex;
+	box-shadow: 0px 3px 5px #999;
 }
+
 .segments .cover {
-    -webkit-clip-path: polygon(0 0, 92% 0%, 100% 100%, 0% 100%);
-    clip-path: polygon(0 0, 92% 0%, 100% 100%, 0% 100%);
-    border-radius: .625rem 0 0 .625rem;
-    width: 50%;
-    margin-right: 1.5rem;
-    overflow: hidden;
+	-webkit-clip-path: polygon(0 0, 92% 0%, 100% 100%, 0% 100%);
+	width: 50%;
+	margin-right: 1.5rem;
+	overflow: hidden;
 }
+
 .segments .cover img {
-    -o-object-fit: cover;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    transition: all .2s ease-in-out;
+	-o-object-fit: cover;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	transition: all .2s ease-in-out;
 }
+
 .segments .info {
-    perspective: 62.5rem;
-    width: 50%;
-    padding: 1rem 1.5rem 3rem 0;
-    position: relative;
+	perspective: 62.5rem;
+	width: 50%;
+	padding: 1rem 1.5rem 3rem 0;
+	position: relative;
 }
-.segments .info h3 {
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    color: var(--primary-color);
-    margin: .625rem 0;
-    overflow: hidden;
+
+.segments .info h3 a {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #fefefe;
+	text-shadow: 0px 1px 0px #c0c0c0,
+		0px 2px 0px #b0b0b0,
+		0px 3px 0px #a0a0a0,
+		0px 4px 0px #909090,
+		0px 5px 10px rgba(0, 0, 0, .9);
+	margin: .625rem 0;
+	overflow: hidden;
+}
+
+.segments .info .meta {
+	justify-content: flex-end;
+	margin: 0;
+	display: flex;
+}
+
+.segments time {
+	color: #999;
+	font-size: .8125em;
+}
+
+.allessay {
+	display: flex;
+	padding-bottom: 15px;
 }
 
 /*********************加载动画***********************/
@@ -820,6 +896,11 @@ main>.inners {
 	.neirong {
 		width: 100%;
 	}
+
+	main>.inners {
+		width: 100%;
+
+	}
 }
 
 /* 中等屏幕（桌面显示器，大于等于 992px） */
@@ -844,6 +925,11 @@ main>.inners {
 	.nav1 ul {
 		overflow: visible;
 		padding-left: 4rem;
+	}
+
+	main>.inners {
+		width: 100%;
+
 	}
 }
 
