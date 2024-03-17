@@ -25,6 +25,10 @@
 	font-family: Sounso-Quality;
 }
 
+::-webkit-scrollbar {
+	display: none;
+}
+
 body a {
 	text-decoration: none;
 }
@@ -544,6 +548,10 @@ main>.inners {
 
 .inner .social .bi-github {
 	color: #000;
+}
+
+.inner .social .bili::before {
+	content: url("./svg/bilibili.svg");
 }
 
 .inner .menu {
