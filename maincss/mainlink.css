@@ -318,7 +318,7 @@ body a {
 	width: 100%;
 	height: 250px;
 	min-height: 3.125rem;
-	max-height: 9.375rem;
+	max-height: 6.375rem;
 	margin-bottom: -.626rem;
 	top: -.3291rem;
 	bottom: 0;
@@ -481,6 +481,7 @@ main>.inners {
 .about .touxiang {
 	width: 150px;
 	border-radius: 50%;
+	margin-top: 50px;
 }
 
 .about .name {
@@ -584,10 +585,10 @@ main>.inners {
 
 
 .neirong {
-	background: linear-gradient(to top, var(--bs-white)0, var(--bs-gray-100)20%)no-repeat top;
+	background: linear-gradient(to bottom, var(--bs-white)0, var(--bs-gray-100)20%)no-repeat bottom;
 	box-shadow: 0 1.25rem 1rem .3125rem var(--bs-gray-100);
 	width: calc(100% - 15.75rem);
-	min-width: 600px;
+	min-width: 300px;
 	min-height: 50rem;
 }
 
@@ -655,7 +656,7 @@ main>.inners {
 }
 
 .segments .正1 .info .meta {
-	margin-right: 200px;
+	margin-right: px;
 }
 
 .segments .zdwz-item:hover {
@@ -724,7 +725,7 @@ main>.inners {
 }
 
 /* 小屏幕手机端 */
-@media (min-width: 0px) and (max-width:768px) {
+@media (min-width: 0px) and (max-width: 375px) {
 	.toggle {
 		display: flex;
 	}
@@ -757,10 +758,67 @@ main>.inners {
 		width: 100%;
 
 	}
+	.segments .zdwz-item {
+		width: 100%;
+	}
+	.twz a p {
+		font-size: 2.5rem;
+	}
+	.twz h1 {
+		font-size: 1.5rem;
+	}
+	.waves {
+		min-height: ;
+		max-height: 3.65rem;
+		margin-bottom: -.651rem;
+	}
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+	.toggle {
+		display: flex;
+	}
+
+	#xhx .s {
+		display: none;
+	}
+
+	.nav1 ul {
+		overflow: visible;
+		padding-left: 20rem;
+	}
+
+	.i-side-nav {
+		position: fixed;
+		top: 0px;
+		right: -274px;
+		height: 100%;
+		width: 274px;
+		z-index: 999999999999999;
+		background-color: #fdfdfd;
+		transition: 0.3s;
+	}
+
+	.neirong {
+		width: 100%;
+	}
+
+	main>.inners {
+		width: 100%;
+
+	}
+	.segments .zdwz-item {
+		width: 100%;
+	}
+	.waves {
+		min-height: 2.125rem;
+		max-height: 5.375rem;
+		margin-bottom: -.65735rem;
+	}
 }
 
 /* 中等屏幕（桌面显示器，大于等于 992px） */
-@media (min-width: 768px) and (max-width:992px) {
+@media (min-width: 768px) and (max-width: 992px) {
 	.toggle {
 		display: flex;
 	}
