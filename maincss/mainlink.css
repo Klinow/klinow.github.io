@@ -181,11 +181,12 @@ body a {
 	height: 60px;
 	line-height: 30px;
 	font-size: 20px;
-	font-family: '';
+	font-weight: 600;
 	padding-left: 30px;
-	border-radius: 50px;
+	border-radius: 20px;
 	background-color: #fff;
-	border-color: #999;
+	border-color: #000;
+	font-family: Alimama;
 }
 
 .search-c .search-se:focus {
@@ -723,7 +724,11 @@ main>.inners {
 	display: flex;
 	padding-bottom: 15px;
 }
-
+@media (min-height: 0px) and (max-height: 745px) {
+	.about .touxiang {
+		margin-top: 0px;
+	}
+}
 /* 小屏幕手机端 */
 @media (min-width: 0px) and (max-width: 375px) {
 	.toggle {
@@ -772,6 +777,12 @@ main>.inners {
 		max-height: 3.65rem;
 		margin-bottom: -.651rem;
 	}
+	.search-c .search-ma .search-se {
+		width: 100%;
+	}
+	.search-c .search-ba {
+		width: 100%;
+	}
 }
 
 @media (min-width: 375px) and (max-width: 768px) {
@@ -814,6 +825,12 @@ main>.inners {
 		min-height: 2.125rem;
 		max-height: 5.375rem;
 		margin-bottom: -.65735rem;
+	}
+	.search-c .search-ma .search-se {
+		width: 100%;
+	}
+	.search-c .search-ba {
+		width: 100%;
 	}
 }
 
