@@ -222,7 +222,6 @@ window.onscroll = function() {
 };
 
 function scrollFunction() {
-	console.log(121);
 	if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
 		fhdb.style.bottom = "1px";
 	} else {
