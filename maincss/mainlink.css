@@ -29,6 +29,19 @@
 	display: none;
 }
 
+b {
+	font-family: Alimama;
+}
+
+html,
+body {
+	scroll-behavior: smooth;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
 body a {
 	text-decoration: none;
 }
@@ -724,11 +737,27 @@ main>.inners {
 	display: flex;
 	padding-bottom: 15px;
 }
+
+.fhdb img {
+	position: fixed;
+	bottom: -170px;
+	right: 0px;
+	z-index: 99;
+	background-color: transparent;
+	width: 120px;
+	height: 170px;
+	transition: .2s;
+}
+
+#myBtn:hover {}
+
+
 @media (min-height: 0px) and (max-height: 745px) {
 	.about .touxiang {
 		margin-top: 0px;
 	}
 }
+
 /* 小屏幕手机端 */
 @media (min-width: 0px) and (max-width: 375px) {
 	.toggle {
@@ -763,23 +792,29 @@ main>.inners {
 		width: 100%;
 
 	}
+
 	.segments .zdwz-item {
 		width: 100%;
 	}
+
 	.twz a p {
 		font-size: 2.5rem;
 	}
+
 	.twz h1 {
 		font-size: 1.5rem;
 	}
+
 	.waves {
 		min-height: ;
 		max-height: 3.65rem;
 		margin-bottom: -.651rem;
 	}
+
 	.search-c .search-ma .search-se {
 		width: 100%;
 	}
+
 	.search-c .search-ba {
 		width: 100%;
 	}
@@ -818,17 +853,21 @@ main>.inners {
 		width: 100%;
 
 	}
+
 	.segments .zdwz-item {
 		width: 100%;
 	}
+
 	.waves {
 		min-height: 2.125rem;
 		max-height: 5.375rem;
 		margin-bottom: -.65735rem;
 	}
+
 	.search-c .search-ma .search-se {
 		width: 100%;
 	}
+
 	.search-c .search-ba {
 		width: 100%;
 	}

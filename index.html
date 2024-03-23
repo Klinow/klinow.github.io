@@ -13,7 +13,7 @@
 		<script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
 		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.min.js"></script>
 	</head>
-	<body>
+	<body oncontextmenu=self.event.returnValue=false>
 		<div id="loading" class="loading">
 			<div class="loader">
 				<span></span>
@@ -69,11 +69,16 @@
 						<div class="lunbotu">
 							<div class="content">
 								<ul id="item">
-									<li class="item active"><a href="#"><img src="https://api.cenguigui.cn/api/pic/?type=mp41"></a></li>
-									<li class="item"><a href="#"><img src="https://api.cenguigui.cn/api/pic/?type=mp42"></a></li>
-									<li class="item"><a href="#"><img src="https://api.cenguigui.cn/api/pic/?type=mp43"></a></li>
-									<li class="item"><a href="#"><img src="https://api.cenguigui.cn/api/pic/?type=mp44"></a></li>
-									<li class="item"><a href="#"><img src="https://api.cenguigui.cn/api/pic/?type=mp45"></a></li>
+									<li class="item active"><a href="#"><img
+												src="https://api.cenguigui.cn/api/pic/?type=mp41"></a></li>
+									<li class="item"><a href="#"><img
+												src="https://api.cenguigui.cn/api/pic/?type=mp42"></a></li>
+									<li class="item"><a href="#"><img
+												src="https://api.cenguigui.cn/api/pic/?type=mp43"></a></li>
+									<li class="item"><a href="#"><img
+												src="https://api.cenguigui.cn/api/pic/?type=mp44"></a></li>
+									<li class="item"><a href="#"><img
+												src="https://api.cenguigui.cn/api/pic/?type=mp45"></a></li>
 								</ul>
 							</div>
 						</div>
@@ -189,12 +194,13 @@
 
 				</div>
 			</main>
+			<a onclick="topFunction()" class="fhdb" title="回顶部"><img src="./mainimg/reimu.png" alt="" /></a>
 		</div>
 		<div id="music" key="65f59287aa47c" api="https://y.cenguigui.cn"></div>
 		<script id="xplayer" src="https://y.cenguigui.cn/Static/player6/js/player.js"></script>
 		</div>
+		<script src="https://cdn.staticfile.net/vue/3.3.4/vue.global.js"></script>
 		<script src="./mainjs/mainscript.js"></script>
 		<script src="https://cdn.bootcdn.net/ajax/libs/marked/9.0.0/marked.min.js"></script>
-		<script src="https://api.cenguigui.cn/api/lib-youjian"></script>
 	</body>
 </html>
