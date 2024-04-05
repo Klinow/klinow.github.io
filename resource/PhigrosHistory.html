@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Klinow's blog - 个人博客">
+		<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+		<title>Klinow's blog</title>
+		<link rel="stylesheet" href="../maincss/mainlink.css" />
+		<link rel="stylesheet" href="https://cdn.staticfile.net/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdn.staticfile.net/bootstrap-icons/1.11.3/font/bootstrap-icons.css" />
+		<link rel="prefetch stylesheet" href="../maincss/loading.css" />
+		<link rel="stylesheet" href="./css/link.css" />
+		<script src="https://cdn.staticfile.net/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+		<script src="https://cdn.staticfile.net/marked/11.1.1/marked.min.js"></script>
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.0.min.js"></script>
+	</head>
+	<body oncontextmenu=self.event.returnValue=false>
+		<div id="loading" class="loading">
+			<div class="loader">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div id="containers">
+			<div id="container">
+				<progress id="content_progress" value="0"></progress>
+				<header id="header">
+					<div class="brand">
+						<div class="twz">
+							<a href="#" class="You">
+								<p>Klinow's blog</p>
+								<h1>Phigros</h1>
+							</a>
+							<p id="beijing-date-time" class="Ali"></p>
+						</div>
+
+						<div class="nav1" id="topnav">
+							<div class="toggle">
+								<svg class="ham hamRotate ham4 i-nav-hu" viewBox="0 0 100 100" width="80" onclick=""
+									id="i-side-nav">
+									<path class="line top"
+										d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+									<path class="line middle" d="m 70,50 h -40" />
+									<path class="line bottom"
+										d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+								</svg>
+							</div>
+							<ul class="liks" id="xhx">
+								<li class="logo"><a href="../index.html">Klinow's blog</a></li>
+								<li class="d1 s"><a href="../index.html" class="zhuye">首页</a></li>
+								<li class="d2 s"><a href="./resource/resource.html">资源</a></li>
+								<li class="d2 s"><a href="./about/about.html">关于</a></li>
+								<li class="d1 s"><a href="">文章</a></li>
+								<li class="d2 s"><a href="./opinion.html">友链</a></li>
+							</ul>
+							<ul class="liks tubiaos">
+								<li class="tb search"><i class="bi bi-search ic" id="search-bi"
+										style="color: #fff;"></i></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="lbtwave">
+						<div class="lunbotu">
+							<div class="content">
+								<ul id="item">
+									<li class="item active"><a href="#"><img src="../mainimg/Phigros.jpg"></a></li>
+								</ul>
+							</div>
+						</div>
+				</header>
+
+				<div class="search-c" id="search-j">
+					<div class="search-ma">
+						<input class="search-se" type="text" id="searchInput" oninput="search()">
+					</div>
+					<div class="search-ba Ali">
+						<ul id="results"></ul>
+					</div>
+				</div>
+
+				<div class="waves" name="波浪">
+					<svg class="waves" viewBox="0 24 150 24" preserveAspectRatio="none">
+						<defs>
+							<path id="wave"
+								d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+						</defs>
+						<g class="parallax">
+							<use class="wave" xlink:href="#wave" fill="rgba(255,255,255,0.7" x="50" y="0"></use>
+							<use class="wave" xlink:href="#wave" fill="rgba(255,255,255,0.5)" x="50" y="3"></use>
+							<use class="wave" xlink:href="#wave" fill="rgba(255,255,255,0.3)" x="50" y="5"></use>
+							<use class="wave" xlink:href="#wave" fill="#fff" x="50" y="7"></use>
+						</g>
+					</svg>
+				</div>
+			</div>
+			<main id="main-a">
+				<div class="inners">
+					<div class="neirong" id="main">
+						<div class="nemain wrap">
+							<div class="segments">
+								<article id="json-display"></article>
+							</div>
+						</div>
+					</div>
+					<div class="i-side-nav" id="i-side-nav">
+						<div class="inner">
+							<div class="about">
+								<img src="" alt="" />
+								<img class="touxiang" src="http://q1.qlogo.cn/g?b=qq&nk=2719206103&s=640" />
+								<h3 class="name Soun">Klinow</h3>
+								<div class="liuyan You">嘿[[}}</div>
+							</div>
+							<nav class="state">
+								<div class="item-s"><a href="#"><span class="count">39</span><span
+											class="name">文章</span></a></div>
+								<div class="item-s"><a href="#"><span class="count">4</span><span
+											class="name">分类</span></a>
+								</div>
+								<div class="item-s"><a href="#"><span class="count">12</span><span
+											class="name">标签</span></a></div>
+							</nav>
+							<div class="social">
+								<a href="https://github.com/Klinow"><i class="bi bi-github"></i></a>
+								<a href="https://space.bilibili.com/495704631" style="top: 2px;"><i
+										class="bili"></i></a>
+								<a href="https://qm.qq.com/q/fXt7N9cXOa" style="color:#000;"><i
+										class="bi bi-tencent-qq"></i></a>
+							</div>
+							<div class="menu">
+								<li class=""><a href="../index.html">首页</a></li>
+								<li class=""><a href="./resource/resource.html">资源</a></li>
+								<li class=""><a href="">关于</a></li>
+								<li class=""><a href="">文章</a></li>
+								<li class=""><a href="">友链</a></li>
+							</div>
+						</div>
+					</div>
+					<div class="i-shade" id="i-shade"></div>
+
+				</div>
+			</main>
+			<a onclick="topFunction()" class="fhdb" title="回顶部"><img src="https://klinow.gitee.io/res/reimu.png"
+					alt="" /></a>
+		</div>
+		<div id="music" key="65f59287aa47c" api="https://y.cenguigui.cn"></div>
+		<script id="xplayer" src="https://y.cenguigui.cn/Static/player6/js/player.js"></script>
+		</div>
+		<script src="https://cdn.staticfile.net/vue/3.3.4/vue.global.js"></script>
+		<script src="../mainjs/mainvue.js"></script>
+		<script src="../mainjs/mainscript.js"></script>
+		<script src="./js/search.js"></script>
+		<script src="./js/script.js"></script>
+	</body>
+</html>

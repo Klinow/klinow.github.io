@@ -1,0 +1,51 @@
+#json-display {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	animation: liyu 2s;
+}
+
+
+#json-display .item {
+	position: relative;
+    border: 2px solid #ccc;
+	bottom: 10px;
+    padding: 20px;
+	border-radius: 20px;
+	margin: 10px;
+}
+
+#json-display .item:hover{
+	border-color: #000;
+	transition: .2s;
+}
+
+#json-display .item a {
+    text-decoration: none;
+    color: #000;
+	padding: 10px;
+	border: 1px solid #000;
+	border-radius: 10px;
+}
+
+#json-display .item a:hover {
+	color: #fff;
+	background-color: #000;
+	transition: .2s;
+}
+
+#json-display .item p,h5 {
+	word-break:break-all; 
+}
+
+.active_resource {
+    font-weight: bold;
+}
+
+
+@keyframes liyu
+{
+	0% {top: 0px;}
+	100% {top: 400px;}
+}
