@@ -7,7 +7,7 @@ function search() {
 		return; // If the input is empty, do not display any results
 	}
 
-	fetch('../mainjs/search.json') // Replace 'your_external_data.json' with the actual path to your JSON file
+	fetch('./js/PhigrosHS.json') // Replace 'your_external_data.json' with the actual path to your JSON file
 		.then(response => response.json())
 		.then(data => {
 			for (const key in data) {
